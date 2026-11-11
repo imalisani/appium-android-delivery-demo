@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Delivery QA</string>
+    <string name="delivery_reference">DELIVERY DEMO-101</string>
+    <string name="screen_title">Proof of delivery</string>
+    <string name="delivery_description">Attach a photo to complete this delivery.</string>
+    <string name="delivery_pending">Delivery pending</string>
+    <string name="delivery_confirmed">Delivery confirmed</string>
+    <string name="no_photo">No photo attached</string>
+    <string name="photo_attached">Photo attached</string>
+    <string name="photo_description">Attached proof of delivery photo</string>
+    <string name="add_photo">Add photo</string>
+    <string name="take_photo">Take photo</string>
+    <string name="confirm_delivery">Confirm delivery</string>
+    <string name="camera_permission_denied">Camera permission denied. Allow access in Settings to attach a photo.</string>
+    <string name="camera_starting">Opening camera…</string>
+    <string name="camera_ready">Camera ready</string>
+    <string name="camera_unavailable">Camera unavailable. Try again.</string>
+    <string name="saving_photo">Saving photo…</string>
+    <string name="capture_failed">Could not save the photo. Try again.</string>
+</resources>
