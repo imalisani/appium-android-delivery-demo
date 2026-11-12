@@ -21,7 +21,6 @@ class DeliveryPage:
         self.wait.until(ec.element_to_be_clickable(self.locator(name))).click()
 
     def respond_to_camera_permission(self, *, allow):
-        # Google APIs and AOSP images use different PermissionController package names.
         button = "permission_allow_foreground_only_button" if allow else "permission_deny_button"
         locator = (
             AppiumBy.ANDROID_UIAUTOMATOR,
