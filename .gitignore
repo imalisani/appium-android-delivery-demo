@@ -7,3 +7,4 @@ local.properties
 __pycache__/
 .pytest_cache/
 artifacts/
+/java-tests/target/
