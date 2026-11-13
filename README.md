@@ -31,7 +31,7 @@ uses resource IDs and explicit waits for the camera and delivery state.
 ## Run locally
 
 **Prerequisites** · Android Studio and SDK Platform 35, Build-Tools 34.0.0,
-platform-tools, an Android 14 (API 34) emulator using the Google APIs image,
+platform-tools, an Android 14 (API 34) emulator with a camera,
 JDK 17 or 21, Node.js 22.12+ in the 22.x series, and npm 10+.
 Install Maven 3.9+ for the Java suite or Python 3.12 for the Python suite.
 Configure `ANDROID_HOME` and `JAVA_HOME`, and add the SDK's
@@ -102,13 +102,13 @@ bash scripts/run-android-tests.sh
 
 ### Execution evidence
 
-The GitHub Actions workflow runs both suites on the same Android 14 emulator.
+The GitHub Actions workflow runs both suites on the same Android 14 AOSP emulator.
 Each scenario saves a screenshot, and a failed test also saves the Android UI hierarchy.
 
 | Artifact | Contents |
 | --- | --- |
 | `android-appium-java-evidence` | Java screenshots and failure UI hierarchies from `java-tests/target/evidence/`, plus JUnit XML from `java-tests/target/surefire-reports/` |
-| `android-appium-evidence` | Python screenshots, failure UI hierarchies, Pytest JUnit XML and the shared Appium server log from `artifacts/` |
+| `android-appium-evidence` | Python screenshots, failure UI hierarchies, Pytest JUnit XML, the shared Appium server log, and Android logcat on failure, from `artifacts/` |
 
 The suite covers a single Android delivery with a local photo. Backend upload,
 offline synchronization and iOS are outside the scope of this demo.
